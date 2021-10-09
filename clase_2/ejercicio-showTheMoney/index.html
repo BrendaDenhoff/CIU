@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="botonMoney">Show me the Money</button>
+    <button class="botonMiami">Show me Miami</button>
+    <button class="botonRicky">Show me Miameeee</button>
+
+    <img src="plata.jpg" alt="plata" class="oculto plata img"> <br>
+    <img src="miami.jpg" alt="miami"class="oculto miami img"> <br>
+    <img src="rickyfort.jpg" alt="Ricky fort" class="oculto ricky img"> <br>
+
+    <script>
+        document.querySelector(".botonMoney").addEventListener("click", function() {
+            document.querySelector(".plata").classList.toggle("oculto")
+        })
+
+        document.querySelector(".botonMiami").addEventListener("click", function() {
+            document.querySelector(".miami").classList.toggle("oculto")
+        })
+
+        document.querySelector(".botonRicky").addEventListener("click", function() {
+            document.querySelector(".ricky").classList.toggle("oculto")
+        })
+
+        
+    </script>
+</body>
+</html>
